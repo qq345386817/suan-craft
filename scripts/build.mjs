@@ -13,7 +13,7 @@ const route = (locale, kind = '') => `/${locale === app.sourceLanguage ? '' : lo
 const arrow = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>';
 const email = 'cameoshell09@gmail.com';
 const issues = 'https://github.com/qq345386817/suan-craft/issues';
-const contact = c => `<div class="contact-links"><a href="mailto:${email}">${escape(c['contact.email'])}${arrow}</a><a href="${issues}">${escape(c['contact.github'])}${arrow}</a></div><a class="email-address" href="mailto:${email}">${email}</a>`;
+const contact = c => `<!--email_off--><div class="contact-links"><a href="mailto:${email}">${escape(c['contact.email'])}${arrow}</a><a href="${issues}">${escape(c['contact.github'])}${arrow}</a></div><a class="email-address" href="mailto:${email}">${email}</a><!--/email_off-->`;
 const sections = {
  help: [['quick','quick'],['reading','read'],['challenge','game'],['narration','voice'],['troubleshooting','trouble'],['contact','contact']],
  privacy: [['app','app'],['speech','voice'],['website','web'],['support','support'],['contact','contact']]
