@@ -40,6 +40,6 @@ for (const file of pages) {
   assert.equal(JSON.parse(ld[1]).url,url);
 }
 assert.equal((fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8').match(/<loc>/g)||[]).length,27);
-assert.ok(fs.readFileSync(path.join(dist,'_redirects'),'utf8').includes('https://suan-craft.pages.dev/* https://suan-craft.luopeike.com/:splat 301'));
+assert.ok(fs.readFileSync(path.join(dist,'_redirects'),'utf8').includes('/en-US/* /:splat 301'));
 assert.ok(fs.existsSync(path.join(dist,'404.html')));
-console.log('PASS: 9 complete locales; 27 canonical pages; internal links, anchors, assets, metadata and deployment redirect.');
+console.log('PASS: 9 complete locales; 27 canonical pages; internal links, anchors, assets, metadata and path redirects.');

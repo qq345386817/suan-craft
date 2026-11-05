@@ -30,7 +30,7 @@ English (US) is the source language at `/`. Eight additional locales match the A
 - Node version: 22 via `.node-version`
 - Canonical domain: <https://suan-craft.luopeike.com>
 
-Add the custom domain in the Pages project before creating its Cloudflare DNS record. `public/_redirects` redirects the exact default production hostname `suan-craft.pages.dev` to the canonical domain, retaining the path; Cloudflare retains the query string. It also keeps English and legacy support/privacy aliases. Preview deployment hostnames are not redirected. `public/_headers` adds basic response headers. A real `404.html` prevents SPA fallback.
+Add the custom domain in the Pages project before creating its Cloudflare DNS record. Use an account-level Cloudflare Bulk Redirect list and enabled rule for `suan-craft.pages.dev` → `https://suan-craft.luopeike.com` with status 301. Enable Preserve query string, Subpath matching and Preserve path suffix; leave Include subdomains disabled to retain preview URLs. Domain-level sources are not supported in Pages `_redirects`. `public/_redirects` keeps English and legacy support/privacy path aliases. `public/_headers` adds basic response headers. A real `404.html` prevents SPA fallback.
 
 There is currently no public App Store listing or public TestFlight join link. Do not add a download button until distribution is verified. Public support and privacy contact: `cameoshell09@gmail.com`.
 

@@ -1,4 +1,4 @@
-https://suan-craft.pages.dev/* https://suan-craft.luopeike.com/:splat 301
+# Host-level pages.dev redirect is configured using Cloudflare Bulk Redirects.
 /en-US/ / 301
 /en-US/* /:splat 301
 /support /help/#contact 301
