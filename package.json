@@ -1,0 +1,14 @@
+{
+  "name": "suancraft-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/validate.mjs",
+    "check:app": "node scripts/sync-app.mjs --check",
+    "sync:app": "node scripts/sync-app.mjs",
+    "start": "node scripts/serve.mjs"
+  }
+}

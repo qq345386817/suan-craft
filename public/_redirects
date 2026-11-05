@@ -1,0 +1,7 @@
+https://suan-craft.pages.dev/* https://suan-craft.luopeike.com/:splat 301
+/en-US/ / 301
+/en-US/* /:splat 301
+/support /help/#contact 301
+/support/ /help/#contact 301
+/privacy-policy /privacy/ 301
+/privacy-policy/ /privacy/ 301

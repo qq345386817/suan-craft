@@ -1,0 +1,52 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const output = path.join(root, 'dist');
+const origin = 'https://suan-craft.luopeike.com';
+const app = JSON.parse(fs.readFileSync(path.join(root, 'content/app.json')));
+const names = { 'en-US':'English (US)', 'zh-Hans':'简体中文', 'zh-Hant':'繁體中文', es:'Español', de:'Deutsch', fr:'Français', ko:'한국어', ja:'日本語', ms:'Bahasa Melayu' };
+const ogLocales = { 'en-US':'en_US', 'zh-Hans':'zh_CN', 'zh-Hant':'zh_TW', es:'es_ES', de:'de_DE', fr:'fr_FR', ko:'ko_KR', ja:'ja_JP', ms:'ms_MY' };
+const kinds = ['', 'help', 'privacy'];
+const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const route = (locale, kind = '') => `/${locale === app.sourceLanguage ? '' : locale + '/'}${kind ? kind + '/' : ''}`;
+const arrow = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>';
+const email = 'cameoshell09@gmail.com';
+const issues = 'https://github.com/qq345386817/suan-craft/issues';
+const contact = c => `<div class="contact-links"><a href="mailto:${email}">${escape(c['contact.email'])}${arrow}</a><a href="${issues}">${escape(c['contact.github'])}${arrow}</a></div><a class="email-address" href="mailto:${email}">${email}</a>`;
+const sections = {
+ help: [['quick','quick'],['reading','read'],['challenge','game'],['narration','voice'],['troubleshooting','trouble'],['contact','contact']],
+ privacy: [['app','app'],['speech','voice'],['website','web'],['support','support'],['contact','contact']]
+};
+fs.rmSync(output, { recursive:true, force:true });
+fs.mkdirSync(output, { recursive:true });
+fs.cpSync(path.join(root, 'public'), output, { recursive:true });
+const sitemap = [];
+for (const locale of app.languages) {
+ const c = JSON.parse(fs.readFileSync(path.join(root, `content/${locale}.json`)));
+ for (const kind of kinds) {
+  const pathname = route(locale, kind), canonical = origin + pathname;
+  const title = kind ? `${c[`${kind}.title`]} — SuanCraft` : `SuanCraft — ${c['home.title'].replace(/\n/g,' ')}`;
+  const description = kind ? c[`${kind}.lead`] : `${c['home.lead']} ${c['home.body']}`;
+  const links = app.languages.map(l => `<link rel="alternate" hreflang="${l}" href="${origin + route(l,kind)}">`).join('') + `<link rel="alternate" hreflang="x-default" href="${origin + route(app.sourceLanguage,kind)}">`;
+  const header = `<header class="site-header container"><a class="brand" href="${route(locale)}" aria-label="SuanCraft ${escape(c['nav.home'])}">SuanCraft</a><nav aria-label="${escape(c['nav.contents'])}"><a href="${route(locale,'help')}"${kind==='help'?' aria-current="page"':''}>${escape(c['nav.help'])}</a><a href="${route(locale,'privacy')}"${kind==='privacy'?' aria-current="page"':''}>${escape(c['nav.privacy'])}</a><label class="language"><span class="sr-only">${escape(c['nav.language'])}</span><select id="language" aria-label="${escape(c['nav.language'])}">${app.languages.map(l=>`<option value="${route(l,kind)}" lang="${l}"${l===locale?' selected':''}>${names[l]}</option>`).join('')}</select><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 7 5 5 5-5"/></svg></label></nav></header>`;
+  const footer = `<footer class="site-footer container"><a class="brand" href="${route(locale)}">SuanCraft</a><nav aria-label="${escape(c['nav.contents'])}"><a href="${route(locale,'help')}">${escape(c['nav.help'])}</a><a href="${route(locale,'privacy')}">${escape(c['nav.privacy'])}</a><a href="https://github.com/qq345386817/suan-craft">GitHub</a><span class="copyright">© 2026</span></nav><div class="language-links" aria-label="${escape(c['nav.language'])}">${app.languages.map(l=>`<a href="${route(l,kind)}" lang="${l}" hreflang="${l}"${l===locale?' aria-current="page"':''}>${names[l]}</a>`).join('')}</div></footer>`;
+  let body;
+  if (!kind) {
+   body = `<main id="main" class="home container"><section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><h1 id="hero-title">${escape(c['home.title']).replace(/\n/g,'<br>')}</h1><p class="lead">${escape(c['home.lead'])}</p><p class="hero-description">${escape(c['home.body'])}</p><div class="hero-actions"><a class="button" href="${route(locale,'help')}">${escape(c['home.guide'])}</a><a class="text-link" href="#how-it-works">${escape(c['home.how'])}${arrow}</a></div><p class="platforms">iPhone · iPad · Mac · Apple Vision Pro</p><p class="availability">${escape(c['home.status'])}</p></div><figure class="product"><img src="/assets/abacus.jpg" width="1100" height="680" alt="${escape(c['home.imageAlt'])}" fetchpriority="high"><figcaption>987654321</figcaption></figure></section><section class="counting" id="how-it-works" aria-labelledby="count-title"><div><h2 id="count-title">${escape(c['home.countTitle']).replace(/\n/g,'<br>')}</h2><p class="lead">${escape(c['home.countBody'])}</p></div><dl class="rules">${['One','Five','Ten'].map((label,i)=>`<div><dt>${[1,5,10][i]}</dt><dd>${escape(c['home.rule'+label])}</dd></div>`).join('')}</dl></section><section class="challenge" aria-labelledby="challenge-title"><h2 id="challenge-title">${escape(c['home.gameTitle']).replace(/\n/g,'<br>')}</h2><p class="equation"><span>123456789 × 2 × 2 × 2 + 9</span><span>= 987654321</span></p><p class="lead">${escape(c['home.gameBody'])}</p><a class="text-link" href="${route(locale,'help')}#challenge">${escape(c['home.gameLink'])}${arrow}</a></section></main>`;
+  } else {
+   const entries = sections[kind];
+   const updated = kind==='privacy' ? `<p class="updated">${escape(c['privacy.updated'])}: <time datetime="2026-11-05">${new Intl.DateTimeFormat(locale,{dateStyle:'long',timeZone:'UTC'}).format(new Date('2026-11-05T12:00:00Z'))}</time></p>` : '';
+   body = `<main id="main" class="document container"><div class="document-heading"><h1>${escape(c[kind+'.title'])}</h1><p class="lead">${escape(c[kind+'.lead'])}</p>${updated}</div><div class="document-layout"><aside class="contents"><nav aria-label="${escape(c['nav.contents'])}">${entries.map(([id,key],i)=>`<a href="#${id}"${i===0?' class="is-current"':''}>${escape(c[kind+'.'+key+'Title'])}</a>`).join('')}</nav></aside><article>${entries.map(([id,key])=>`<section id="${id}"><h2>${escape(c[kind+'.'+key+'Title'])}</h2>${kind==='help'&&id==='challenge'?'<p class="article-equation">123456789 × 2 × 2 × 2 + 9 = 987654321</p>':''}<p>${escape(c[kind+'.'+key+'Body'])}</p>${id==='contact'?contact(c):''}${kind==='help'&&id==='troubleshooting'?`<h3>${escape(c['help.compatibility'])}</h3><dl class="compatibility">${Object.entries(app.minimumOS).map(([os,version])=>`<div><dt>${os}</dt><dd>${version}+</dd></div>`).join('')}</dl>`:''}${kind==='privacy'&&id==='speech'?'<p class="external-policies"><a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight</a></p>':''}${kind==='privacy'&&id==='website'?'<p class="external-policies"><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a></p>':''}${kind==='privacy'&&id==='support'?'<p class="external-policies"><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a></p>':''}</section>`).join('')}</article></div></main>`;
+  }
+  const schema = kind ? {'@context':'https://schema.org','@type':'WebPage',name:title,description,url:canonical,inLanguage:locale} : {'@context':'https://schema.org','@type':'SoftwareApplication',name:'SuanCraft',applicationCategory:'EducationalApplication',operatingSystem:Object.entries(app.minimumOS).map(([os,v])=>`${os} ${v}+`).join(', '),softwareVersion:app.version,url:canonical,inLanguage:locale,description,screenshot:origin+'/assets/abacus.jpg'};
+  const html = `<!doctype html>\n<html lang="${locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)}</title><meta name="description" content="${escape(description)}"><meta name="theme-color" content="#101611"><link rel="canonical" href="${canonical}">${links}<link rel="icon" href="/assets/icon.png" type="image/png"><link rel="apple-touch-icon" href="/assets/icon.png"><link rel="stylesheet" href="/assets/site.css"><script src="/assets/site.js" defer></script><meta property="og:type" content="website"><meta property="og:title" content="${escape(title)}"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="SuanCraft"><meta property="og:locale" content="${ogLocales[locale]}"><meta property="og:image" content="${origin}/assets/abacus.jpg"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script></head><body class="${kind?'article-page':'home-page'}"><a class="skip" href="#main">${escape(c['nav.skip'])}</a>${header}${body}${footer}</body></html>\n`;
+  const directory = path.join(output, pathname);fs.mkdirSync(directory,{recursive:true});fs.writeFileSync(path.join(directory,'index.html'),html);
+  sitemap.push({url:canonical,kind});
+ }
+}
+const english = JSON.parse(fs.readFileSync(path.join(root,'content/en-US.json')));
+fs.writeFileSync(path.join(output,'404.html'),`<!doctype html><html lang="en-US"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>404 — SuanCraft</title><link rel="stylesheet" href="/assets/site.css"></head><body><main class="container error"><a class="brand" href="/">SuanCraft</a><h1>${english['error.title']}</h1><p>${english['error.body']}</p><a class="button" href="/help/">${english['home.guide']}</a></main></body></html>`);
+fs.writeFileSync(path.join(output,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${sitemap.map(e=>`<url><loc>${e.url}</loc>${app.languages.map(l=>`<xhtml:link rel="alternate" hreflang="${l}" href="${origin+route(l,e.kind)}"/>`).join('')}<xhtml:link rel="alternate" hreflang="x-default" href="${origin+route(app.sourceLanguage,e.kind)}"/></url>`).join('')}</urlset>\n`);
+fs.writeFileSync(path.join(output,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
+console.log(`Built ${sitemap.length} pages / ${app.languages.length} locales, source ${app.sourceLanguage}`);
