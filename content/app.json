@@ -13,7 +13,7 @@
     "zh-Hant"
   ],
   "version": "1.0.0",
-  "build": "13",
+  "build": "14",
   "minimumOS": {
     "iOS": "18.0",
     "iPadOS": "18.0",
