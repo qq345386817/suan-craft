@@ -12,7 +12,7 @@
     "zh-Hans",
     "zh-Hant"
   ],
-  "version": "1.0",
+  "version": "1.0.0",
   "build": "13",
   "minimumOS": {
     "iOS": "18.0",
