@@ -1,6 +1,6 @@
 # SuanCraft website
 
-Official product, help and privacy pages for SuanCraft. This is an independent Git repository, separate from the native App repository above it.
+Official product, help and privacy pages for SuanCraft. This is an independent Git repository, separate from the native App repository above it. The native source is [`qq345386817/SuanCraft`](https://github.com/qq345386817/SuanCraft); this website is [`qq345386817/suan-craft`](https://github.com/qq345386817/suan-craft). Commit and push each repository separately.
 
 ## Local development
 
@@ -36,7 +36,7 @@ There is currently no public App Store listing or public TestFlight join link. D
 
 ## Assets and privacy
 
-`public/assets/abacus.jpg` is a crop of the real App's completed 987654321 demonstration, from the parent project's `docs/verification/chant-and-silent-audio-20261105/iphone-chant-demo-complete.png`. It is a product image, not an interactive browser abacus. The icon is the App's existing icon. The site loads no third-party fonts, analytics or advertising scripts. Generated visual concepts and QA evidence are kept outside this repository.
+`public/assets/abacus.jpg` is the retained crop of the real App's completed 987654321 demonstration, captured during the 2026-11-05 iPhone QA session. The original QA screenshot was removed during the parent project's storage cleanup; this published product asset remains tracked here. It is a product image, not an interactive browser abacus. The icon is the App's existing icon. The site loads no third-party fonts, analytics or advertising scripts. Generated visual concepts and QA evidence are kept outside this repository. Keep the product image and icon tracked; exclude `dist/`, local credentials and generated QA captures from commits.
 
 ## Product copy, SEO and release facts
 
