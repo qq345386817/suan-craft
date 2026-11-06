@@ -19,7 +19,7 @@ Open <http://127.0.0.1:4173>. The preview server does not emulate Cloudflare red
 
 English (US) is the source language at `/`. Eight additional locales match the App: `zh-Hans`, `zh-Hant`, `es`, `de`, `fr`, `ko`, `ja`, `ms`. Every locale has its own home, help and privacy page. Language switching preserves the current page and anchor; no preference cookie is used.
 
-`content/app.json` is a committed snapshot of the native App's locales, minimum OS versions and release version. While this repository is checked out inside the native project, run `npm run sync:app` after changing those settings and `npm run check:app` to detect drift. Cloudflare builds are independent of the parent checkout. Translated copy lives in `content/<locale>.json`; validation rejects missing or empty keys.
+`content/app.json` is a committed snapshot of the native App's locales, minimum OS versions and release version. While this repository is checked out inside the native project, run `npm run sync:app` after changing those settings or Fastlane metadata and `npm run check:app` to detect drift. Cloudflare builds are independent of the parent checkout. Translated copy lives in `content/<locale>.json`; validation rejects missing or empty keys.
 
 ## Cloudflare Pages
 
@@ -37,3 +37,9 @@ There is currently no public App Store listing or public TestFlight join link. D
 ## Assets and privacy
 
 `public/assets/abacus.jpg` is a crop of the real App's completed 987654321 demonstration, from the parent project's `docs/verification/chant-and-silent-audio-20261105/iphone-chant-demo-complete.png`. It is a product image, not an interactive browser abacus. The icon is the App's existing icon. The site loads no third-party fonts, analytics or advertising scripts. Generated visual concepts and QA evidence are kept outside this repository.
+
+## Product copy, SEO and release facts
+
+Home/help SEO titles and descriptions are maintained in all nine content files independently of the short hero slogan. Four game names are copied from the App catalog; summaries, guides and collapsible FAQ describe the current two-upper/five-lower abacus, manual carries and session-only progress. JSON-LD features match visible home text. Privacy disclosures and their update date are unchanged.
+
+content/store-metadata.json is a snapshot of local Fastlane copy, explicitly not proof of live App Store metadata. The parent-only check:app also detects metadata drift. Cloudflare builds use committed snapshots without the parent repo. No public price, rating, download link or released version is inferred from a source build. deployment.json identifies the actual website commit built by Cloudflare for production readback.

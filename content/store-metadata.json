@@ -1,0 +1,174 @@
+{
+  "source": "local-fastlane",
+  "published": false,
+  "platforms": {
+    "ios": {
+      "de": {
+        "name": "SuanCraft",
+        "subtitle": "Chinesischer Abakus in 3D",
+        "description": "Auf dem iPhone und iPad bewegst du die Perlen eines chinesischen Abakus mit zwei oberen und fünf unteren Perlen pro Stab. Entdecke Stellenwerte und übe mit schrittweisen Vorführungen in vier Rechenspielen.\n\nNutze alle neun Stäbe oder übe an einem einzelnen Stab. Drehe und vergrößere die Ansicht, prüfe die Stellenwerte und führe Überträge selbst aus.\n\nVier Spiele bieten Vorführungen und eigene Übungen: Dreimal verdoppeln, Zahlenkarussell, Zurück auf null und Gleiche Zahl, andere Kugeln. Pausiere, setze fort oder gehe schrittweise vor und prüfe deine Perlenstellungen. Zurück auf null umfasst 10, 20 oder 100 Schritte.\n\nDie optionale Sprachausgabe liest kurze Rechenhinweise mit installierten Systemstimmen. Unterstützt werden Englisch, vereinfachtes und traditionelles Chinesisch, Spanisch, Deutsch, Französisch, Koreanisch, Japanisch und Malaiisch.",
+        "promotional_text": "Perlen selbst bewegen, Stellenwerte entdecken und vier Rechenspiele üben. Folge schrittweisen Vorführungen, pausiere und prüfe deine eigenen Perlenstellungen."
+      },
+      "en-US": {
+        "name": "SuanCraft",
+        "subtitle": "Chinese Abacus: Learn in 3D",
+        "description": "On iPhone and iPad, move the beads of a traditional Chinese abacus with two upper and five lower beads on each rod. Explore place values, follow step-by-step demonstrations and practise with four hands-on arithmetic games.\n\nUse the full nine-rod abacus or focus on one rod. Rotate and zoom the view, inspect each place value, and handle carries yourself.\n\nFour games include demonstrations and hands-on practice: Double three times, Number carousel, Return to zero and Same number, different beads. Pause, resume, step through a demonstration, or check your own bead positions. Return to zero offers 10, 20 or 100 steps.\n\nOptional narration speaks essential arithmetic cues using installed system voices. Available in English, Simplified Chinese, Traditional Chinese, Spanish, German, French, Korean, Japanese and Malay.",
+        "promotional_text": "Move 3D abacus beads yourself, explore place values, then follow demonstrations and practise four arithmetic games. Pause, step through and check your bead positions."
+      },
+      "es": {
+        "name": "SuanCraft",
+        "subtitle": "Ábaco chino 3D y ejercicios",
+        "description": "En iPhone y iPad, mueve las cuentas de un ábaco chino con dos superiores y cinco inferiores por varilla. Explora el valor posicional, sigue demostraciones paso a paso y practica con cuatro juegos.\n\nUsa el ábaco de nueve varillas o practica con una sola. Gira y amplía la vista, consulta el valor de cada posición y realiza las llevadas manualmente.\n\nCuatro juegos ofrecen demostraciones y práctica: Duplicar tres veces, Números en rotación, Volver a cero y Un número, distintas formas. Pausa, continúa o avanza paso a paso y comprueba tus propias cuentas. Volver a cero incluye 10, 20 o 100 pasos.\n\nLa narración opcional utiliza voces del sistema instaladas para leer indicaciones aritméticas esenciales. Disponible en inglés, chino simplificado y tradicional, español, alemán, francés, coreano, japonés y malayo.",
+        "promotional_text": "Mueve las cuentas, explora el valor posicional y practica con cuatro juegos. Sigue demostraciones paso a paso, pausa y comprueba tus propias posiciones."
+      },
+      "fr": {
+        "name": "SuanCraft",
+        "subtitle": "Boulier chinois 3D : pratique",
+        "description": "Sur iPhone et iPad, manipulez un boulier chinois à deux perles supérieures et cinq inférieures par tige. Découvrez la valeur de position, suivez les démonstrations pas à pas et entraînez-vous avec quatre jeux.\n\nUtilisez les neuf tiges ou entraînez-vous sur une seule. Faites pivoter la vue, zoomez, consultez les valeurs de position et effectuez vous-même les retenues.\n\nQuatre jeux proposent des démonstrations et des exercices : Trois doublements, La ronde des nombres, Retour à zéro et Un nombre, plusieurs formes. Mettez en pause, reprenez, avancez pas à pas et vérifiez vos propres positions. Retour à zéro propose 10, 20 ou 100 étapes.\n\nLa narration facultative lit de courtes consignes de calcul avec les voix système installées. Disponible en anglais, chinois simplifié et traditionnel, espagnol, allemand, français, coréen, japonais et malais.",
+        "promotional_text": "Déplacez les perles, découvrez leur valeur et entraînez-vous avec quatre jeux. Suivez les démonstrations pas à pas, mettez en pause et vérifiez vos positions."
+      },
+      "ja": {
+        "name": "SuanCraft",
+        "subtitle": "中国式3Dそろばん・珠算練習",
+        "description": "iPhoneとiPadで、上珠2つ・下珠5つの中国式そろばんを3Dで操作。珠を動かして数位を確かめ、お手本を見て4つのゲームを自分で練習できます。\n\n九桁のそろばんと、拡大した一桁の練習を選べます。表示を回転・拡大して位の値を確認でき、繰り上がりや繰り下がりは自分で操作します。\n\n「3回の2倍チャレンジ」「数字の回転木馬」「百子還元」「同じ数、違う珠の形」の4つのゲームで、お手本と手動練習を用意しました。一時停止、再開、1ステップずつの再生に対応し、練習では実際の珠の配置を確認します。「百子還元」は10・20・100ステップを選べます。\n\n任意の音声案内は、インストール済みのシステム音声で計算の要点だけを読み上げます。英語、中国語簡体字・繁体字、スペイン語、ドイツ語、フランス語、韓国語、日本語、マレー語に対応しています。",
+        "promotional_text": "珠を動かして位の値を確かめ、4つのゲームを自分のペースで練習。珠ごとのお手本を一時停止・1ステップずつ再生し、自分の珠の配置を確認できます。"
+      },
+      "ko": {
+        "name": "SuanCraft",
+        "subtitle": "중국식 3D 주판과 계산 연습",
+        "description": "iPhone과 iPad에서 윗알 2개·아랫알 5개의 중국식 3D 주판을 직접 움직여 보세요. 자릿값을 살펴보고 단계별 시범을 따라 네 가지 게임을 연습할 수 있습니다.\n\n아홉 자릿수 주판이나 확대된 한 자릿수 연습을 선택하세요. 화면을 회전하고 확대하며 자릿값을 살펴보고, 올림과 내림은 직접 처리합니다.\n\n세 번 두 배 만들기, 회전하는 숫자, 다시 영으로, 같은 수, 다른 구슬 등 네 가지 게임에서 시범과 직접 연습을 제공합니다. 시범을 일시 정지하거나 계속하고 한 단계씩 볼 수 있으며, 연습에서는 실제 알의 배치를 확인합니다. 다시 영으로는 10, 20, 100단계를 지원합니다.\n\n선택형 음성 안내는 설치된 시스템 음성으로 핵심 계산 구절만 읽습니다. 영어, 중국어 간체·번체, 스페인어, 독일어, 프랑스어, 한국어, 일본어, 말레이어를 지원합니다.",
+        "promotional_text": "주판알을 직접 움직이며 자릿값을 살펴보고 네 가지 게임을 연습하세요. 단계별 시범을 따라 일시 정지하거나 직접 놓은 알의 배치를 확인할 수 있습니다."
+      },
+      "ms": {
+        "name": "SuanCraft",
+        "subtitle": "Abakus Cina 3D & latihan",
+        "description": "Pada iPhone dan iPad, gerakkan manik abakus Cina dengan dua manik atas dan lima manik bawah pada setiap batang. Fahami nilai tempat, ikuti demonstrasi langkah demi langkah dan berlatih melalui empat permainan.\n\nGunakan abakus sembilan batang atau berlatih dengan satu batang yang diperbesar. Putar dan zum paparan, lihat nilai tempat dan lakukan bawa atau pinjam secara manual.\n\nEmpat permainan menyediakan demonstrasi dan latihan: Darab dua, tiga kali, Karusel nombor, Kembali ke sifar dan Nombor sama, manik berbeza. Jeda, sambung atau mainkan satu langkah pada satu masa, kemudian semak susunan manik anda. Kembali ke sifar menawarkan 10, 20 atau 100 langkah.\n\nNarasi pilihan menggunakan suara sistem yang dipasang untuk membaca petunjuk aritmetik utama. Menyokong bahasa Inggeris, Cina Ringkas dan Tradisional, Sepanyol, Jerman, Perancis, Korea, Jepun dan Melayu.",
+        "promotional_text": "Gerakkan manik, fahami nilai tempat dan cuba empat permainan. Ikuti demonstrasi langkah demi langkah, jeda dan semak kedudukan manik anda sendiri."
+      },
+      "zh-Hans": {
+        "name": "SuanCraft",
+        "subtitle": "三维算盘：拨珠练习与珠算游戏",
+        "description": "在 iPhone 和 iPad 上，亲手拨动上二下五的中式三维算盘，观察算珠怎样组成数字。SuanCraft 提供九档与单档体验、数位解释和逐步演示，让你在四个算盘游戏中自己拨珠练习。\n\n可使用九档算盘或放大的单档练习，旋转、缩放视角，查看各档位权及数字含义。进退位由你亲手完成。\n\n内置三次翻倍、数字走马灯、百子还原、同数异形四个游戏，均支持观看演示和手动练习。演示可暂停、继续和单步播放；练习核对实际珠式。百子还原可选10、20或100步。\n\n可选系统配音只朗读关键算术提示，使用设备已安装的语音。支持英语、简体中文、繁体中文、西班牙语、德语、法语、韩语、日语及马来语。",
+        "promotional_text": "沿杆拨动算珠，理解上五下一与数位。观看逐珠演示，再亲手完成翻倍、连加、递减和同数异形练习；支持暂停、单步和核对。"
+      },
+      "zh-Hant": {
+        "name": "SuanCraft",
+        "subtitle": "立體算盤：撥珠練習與珠算遊戲",
+        "description": "在 iPhone 和 iPad 上，親手撥動上二下五的中式立體算盤，觀察算珠如何組成數字。SuanCraft 提供九檔與單檔體驗、位值解說和逐步示範，讓你在四個算盤遊戲中自己撥珠練習。\n\n可使用九檔算盤或放大的單檔練習，旋轉、縮放視角，查看各檔位值及數字含義。進退位由你親手完成。\n\n內建三次翻倍、數字走馬燈、百子還原、同數異形四個遊戲，均支援觀看示範與手動練習。示範可暫停、繼續及逐步播放；練習核對實際珠式。百子還原可選10、20或100步。\n\n可選系統配音只朗讀關鍵算術提示，使用裝置已安裝的語音。支援英語、簡體中文、繁體中文、西班牙語、德語、法語、韓語、日語及馬來語。",
+        "promotional_text": "沿桿撥動算珠，理解上五下一與位值。觀看逐珠示範，再親手完成翻倍、連加、遞減和同數異形練習；支援暫停、單步和核對。"
+      }
+    },
+    "macos": {
+      "de": {
+        "name": "SuanCraft",
+        "subtitle": "Chinesischer Abakus in 3D",
+        "description": "Auf deinem Mac bewegst du die Perlen eines chinesischen Abakus mit zwei oberen und fünf unteren Perlen pro Stab. Entdecke Stellenwerte und übe mit schrittweisen Vorführungen in vier Rechenspielen.\n\nNutze alle neun Stäbe oder übe an einem einzelnen Stab. Drehe und vergrößere die Ansicht, prüfe die Stellenwerte und führe Überträge selbst aus.\n\nVier Spiele bieten Vorführungen und eigene Übungen: Dreimal verdoppeln, Zahlenkarussell, Zurück auf null und Gleiche Zahl, andere Kugeln. Pausiere, setze fort oder gehe schrittweise vor und prüfe deine Perlenstellungen. Zurück auf null umfasst 10, 20 oder 100 Schritte.\n\nDie optionale Sprachausgabe liest kurze Rechenhinweise mit installierten Systemstimmen. Unterstützt werden Englisch, vereinfachtes und traditionelles Chinesisch, Spanisch, Deutsch, Französisch, Koreanisch, Japanisch und Malaiisch.",
+        "promotional_text": "Ein chinesischer Abakus auf deinem Mac: Perlen bewegen, Ansicht drehen und zoomen, Vorführungen folgen und vier Spiele mit manuellen Überträgen üben."
+      },
+      "en-US": {
+        "name": "SuanCraft",
+        "subtitle": "Chinese Abacus: Learn in 3D",
+        "description": "On your Mac, move the beads of a traditional Chinese abacus with two upper and five lower beads on each rod. Explore place values, follow step-by-step demonstrations and practise with four hands-on arithmetic games.\n\nUse the full nine-rod abacus or focus on one rod. Rotate and zoom the view, inspect each place value, and handle carries yourself.\n\nFour games include demonstrations and hands-on practice: Double three times, Number carousel, Return to zero and Same number, different beads. Pause, resume, step through a demonstration, or check your own bead positions. Return to zero offers 10, 20 or 100 steps.\n\nOptional narration speaks essential arithmetic cues using installed system voices. Available in English, Simplified Chinese, Traditional Chinese, Spanish, German, French, Korean, Japanese and Malay.",
+        "promotional_text": "Explore a Chinese abacus on your Mac. Move beads, rotate and zoom, then follow step-by-step demonstrations and practise four games with manual carries."
+      },
+      "es": {
+        "name": "SuanCraft",
+        "subtitle": "Ábaco chino 3D y ejercicios",
+        "description": "En tu Mac, mueve las cuentas de un ábaco chino con dos superiores y cinco inferiores por varilla. Explora el valor posicional, sigue demostraciones paso a paso y practica con cuatro juegos.\n\nUsa el ábaco de nueve varillas o practica con una sola. Gira y amplía la vista, consulta el valor de cada posición y realiza las llevadas manualmente.\n\nCuatro juegos ofrecen demostraciones y práctica: Duplicar tres veces, Números en rotación, Volver a cero y Un número, distintas formas. Pausa, continúa o avanza paso a paso y comprueba tus propias cuentas. Volver a cero incluye 10, 20 o 100 pasos.\n\nLa narración opcional utiliza voces del sistema instaladas para leer indicaciones aritméticas esenciales. Disponible en inglés, chino simplificado y tradicional, español, alemán, francés, coreano, japonés y malayo.",
+        "promotional_text": "Practica con un ábaco chino en tu Mac: mueve cuentas, gira y amplía la vista y sigue demostraciones. Cuatro juegos para practicar con llevadas manuales."
+      },
+      "fr": {
+        "name": "SuanCraft",
+        "subtitle": "Boulier chinois 3D : pratique",
+        "description": "Sur votre Mac, manipulez un boulier chinois à deux perles supérieures et cinq inférieures par tige. Découvrez la valeur de position, suivez les démonstrations pas à pas et entraînez-vous avec quatre jeux.\n\nUtilisez les neuf tiges ou entraînez-vous sur une seule. Faites pivoter la vue, zoomez, consultez les valeurs de position et effectuez vous-même les retenues.\n\nQuatre jeux proposent des démonstrations et des exercices : Trois doublements, La ronde des nombres, Retour à zéro et Un nombre, plusieurs formes. Mettez en pause, reprenez, avancez pas à pas et vérifiez vos propres positions. Retour à zéro propose 10, 20 ou 100 étapes.\n\nLa narration facultative lit de courtes consignes de calcul avec les voix système installées. Disponible en anglais, chinois simplifié et traditionnel, espagnol, allemand, français, coréen, japonais et malais.",
+        "promotional_text": "Un boulier chinois sur votre Mac : déplacez les perles, faites pivoter et zoomez, puis suivez les démonstrations et pratiquez quatre jeux avec retenues manuelles."
+      },
+      "ja": {
+        "name": "SuanCraft",
+        "subtitle": "中国式3Dそろばん・珠算練習",
+        "description": "Macで、上珠2つ・下珠5つの中国式そろばんを3Dで操作。珠を動かして数位を確かめ、お手本を見て4つのゲームを自分で練習できます。\n\n九桁のそろばんと、拡大した一桁の練習を選べます。表示を回転・拡大して位の値を確認でき、繰り上がりや繰り下がりは自分で操作します。\n\n「3回の2倍チャレンジ」「数字の回転木馬」「百子還元」「同じ数、違う珠の形」の4つのゲームで、お手本と手動練習を用意しました。一時停止、再開、1ステップずつの再生に対応し、練習では実際の珠の配置を確認します。「百子還元」は10・20・100ステップを選べます。\n\n任意の音声案内は、インストール済みのシステム音声で計算の要点だけを読み上げます。英語、中国語簡体字・繁体字、スペイン語、ドイツ語、フランス語、韓国語、日本語、マレー語に対応しています。",
+        "promotional_text": "Macで中国式3Dそろばんを操作。表示を回転・拡大し、お手本に沿って4つのゲームを練習できます。繰り上がり・繰り下がりは自分で操作します。"
+      },
+      "ko": {
+        "name": "SuanCraft",
+        "subtitle": "중국식 3D 주판과 계산 연습",
+        "description": "Mac에서 윗알 2개·아랫알 5개의 중국식 3D 주판을 직접 움직여 보세요. 자릿값을 살펴보고 단계별 시범을 따라 네 가지 게임을 연습할 수 있습니다.\n\n아홉 자릿수 주판이나 확대된 한 자릿수 연습을 선택하세요. 화면을 회전하고 확대하며 자릿값을 살펴보고, 올림과 내림은 직접 처리합니다.\n\n세 번 두 배 만들기, 회전하는 숫자, 다시 영으로, 같은 수, 다른 구슬 등 네 가지 게임에서 시범과 직접 연습을 제공합니다. 시범을 일시 정지하거나 계속하고 한 단계씩 볼 수 있으며, 연습에서는 실제 알의 배치를 확인합니다. 다시 영으로는 10, 20, 100단계를 지원합니다.\n\n선택형 음성 안내는 설치된 시스템 음성으로 핵심 계산 구절만 읽습니다. 영어, 중국어 간체·번체, 스페인어, 독일어, 프랑스어, 한국어, 일본어, 말레이어를 지원합니다.",
+        "promotional_text": "Mac에서 중국식 3D 주판을 움직이고 화면을 회전·확대하세요. 시범을 따라 네 가지 게임을 연습하고 올림과 내림은 직접 처리합니다."
+      },
+      "ms": {
+        "name": "SuanCraft",
+        "subtitle": "Abakus Cina 3D & latihan",
+        "description": "Pada Mac anda, gerakkan manik abakus Cina dengan dua manik atas dan lima manik bawah pada setiap batang. Fahami nilai tempat, ikuti demonstrasi langkah demi langkah dan berlatih melalui empat permainan.\n\nGunakan abakus sembilan batang atau berlatih dengan satu batang yang diperbesar. Putar dan zum paparan, lihat nilai tempat dan lakukan bawa atau pinjam secara manual.\n\nEmpat permainan menyediakan demonstrasi dan latihan: Darab dua, tiga kali, Karusel nombor, Kembali ke sifar dan Nombor sama, manik berbeza. Jeda, sambung atau mainkan satu langkah pada satu masa, kemudian semak susunan manik anda. Kembali ke sifar menawarkan 10, 20 atau 100 langkah.\n\nNarasi pilihan menggunakan suara sistem yang dipasang untuk membaca petunjuk aritmetik utama. Menyokong bahasa Inggeris, Cina Ringkas dan Tradisional, Sepanyol, Jerman, Perancis, Korea, Jepun dan Melayu.",
+        "promotional_text": "Terokai abakus Cina pada Mac: gerakkan manik, putar dan zum, kemudian ikuti demonstrasi dan cuba empat permainan dengan bawa dan pinjam secara manual."
+      },
+      "zh-Hans": {
+        "name": "SuanCraft",
+        "subtitle": "三维算盘：拨珠练习与珠算游戏",
+        "description": "在 Mac 上，亲手拨动上二下五的中式三维算盘，观察算珠怎样组成数字。SuanCraft 提供九档与单档体验、数位解释和逐步演示，让你在四个算盘游戏中自己拨珠练习。\n\n可使用九档算盘或放大的单档练习，旋转、缩放视角，查看各档位权及数字含义。进退位由你亲手完成。\n\n内置三次翻倍、数字走马灯、百子还原、同数异形四个游戏，均支持观看演示和手动练习。演示可暂停、继续和单步播放；练习核对实际珠式。百子还原可选10、20或100步。\n\n可选系统配音只朗读关键算术提示，使用设备已安装的语音。支持英语、简体中文、繁体中文、西班牙语、德语、法语、韩语、日语及马来语。",
+        "promotional_text": "在 Mac 操作中式三维算盘，旋转、缩放并查看数位。跟随逐珠演示，再自行拨珠完成四个游戏，进退位由你掌握。"
+      },
+      "zh-Hant": {
+        "name": "SuanCraft",
+        "subtitle": "立體算盤：撥珠練習與珠算遊戲",
+        "description": "在 Mac 上，親手撥動上二下五的中式立體算盤，觀察算珠如何組成數字。SuanCraft 提供九檔與單檔體驗、位值解說和逐步示範，讓你在四個算盤遊戲中自己撥珠練習。\n\n可使用九檔算盤或放大的單檔練習，旋轉、縮放視角，查看各檔位值及數字含義。進退位由你親手完成。\n\n內建三次翻倍、數字走馬燈、百子還原、同數異形四個遊戲，均支援觀看示範與手動練習。示範可暫停、繼續及逐步播放；練習核對實際珠式。百子還原可選10、20或100步。\n\n可選系統配音只朗讀關鍵算術提示，使用裝置已安裝的語音。支援英語、簡體中文、繁體中文、西班牙語、德語、法語、韓語、日語及馬來語。",
+        "promotional_text": "在 Mac 操作中式立體算盤，旋轉、縮放並查看位值。跟隨逐珠示範，再自行撥珠完成四個遊戲，進退位由你掌握。"
+      }
+    },
+    "visionos": {
+      "de": {
+        "name": "SuanCraft",
+        "subtitle": "Chinesischer Abakus in 3D",
+        "description": "In einem visionOS-Fenster bewegst du die Perlen eines chinesischen Abakus mit zwei oberen und fünf unteren Perlen pro Stab. Entdecke Stellenwerte und übe mit schrittweisen Vorführungen in vier Rechenspielen.\n\nNutze alle neun Stäbe oder übe an einem einzelnen Stab. Drehe und vergrößere die Ansicht, prüfe die Stellenwerte und führe Überträge selbst aus.\n\nVier Spiele bieten Vorführungen und eigene Übungen: Dreimal verdoppeln, Zahlenkarussell, Zurück auf null und Gleiche Zahl, andere Kugeln. Pausiere, setze fort oder gehe schrittweise vor und prüfe deine Perlenstellungen. Zurück auf null umfasst 10, 20 oder 100 Schritte.\n\nDie optionale Sprachausgabe liest kurze Rechenhinweise mit installierten Systemstimmen. Unterstützt werden Englisch, vereinfachtes und traditionelles Chinesisch, Spanisch, Deutsch, Französisch, Koreanisch, Japanisch und Malaiisch.",
+        "promotional_text": "Entdecke einen chinesischen Abakus im visionOS-Fenster. Bewege 3D-Perlen, erkunde Stellenwerte und übe mit Vorführungen in vier Rechenspielen."
+      },
+      "en-US": {
+        "name": "SuanCraft",
+        "subtitle": "Chinese Abacus: Learn in 3D",
+        "description": "In a visionOS window, move the beads of a traditional Chinese abacus with two upper and five lower beads on each rod. Explore place values, follow step-by-step demonstrations and practise with four hands-on arithmetic games.\n\nUse the full nine-rod abacus or focus on one rod. Rotate and zoom the view, inspect each place value, and handle carries yourself.\n\nFour games include demonstrations and hands-on practice: Double three times, Number carousel, Return to zero and Same number, different beads. Pause, resume, step through a demonstration, or check your own bead positions. Return to zero offers 10, 20 or 100 steps.\n\nOptional narration speaks essential arithmetic cues using installed system voices. Available in English, Simplified Chinese, Traditional Chinese, Spanish, German, French, Korean, Japanese and Malay.",
+        "promotional_text": "Explore a Chinese abacus in a visionOS window. Move 3D beads, inspect place values, then follow demonstrations and practise four arithmetic games."
+      },
+      "es": {
+        "name": "SuanCraft",
+        "subtitle": "Ábaco chino 3D y ejercicios",
+        "description": "En una ventana de visionOS, mueve las cuentas de un ábaco chino con dos superiores y cinco inferiores por varilla. Explora el valor posicional, sigue demostraciones paso a paso y practica con cuatro juegos.\n\nUsa el ábaco de nueve varillas o practica con una sola. Gira y amplía la vista, consulta el valor de cada posición y realiza las llevadas manualmente.\n\nCuatro juegos ofrecen demostraciones y práctica: Duplicar tres veces, Números en rotación, Volver a cero y Un número, distintas formas. Pausa, continúa o avanza paso a paso y comprueba tus propias cuentas. Volver a cero incluye 10, 20 o 100 pasos.\n\nLa narración opcional utiliza voces del sistema instaladas para leer indicaciones aritméticas esenciales. Disponible en inglés, chino simplificado y tradicional, español, alemán, francés, coreano, japonés y malayo.",
+        "promotional_text": "Explora un ábaco chino en una ventana de visionOS. Mueve cuentas 3D, descubre su valor y sigue demostraciones para practicar con cuatro juegos."
+      },
+      "fr": {
+        "name": "SuanCraft",
+        "subtitle": "Boulier chinois 3D : pratique",
+        "description": "Dans une fenêtre visionOS, manipulez un boulier chinois à deux perles supérieures et cinq inférieures par tige. Découvrez la valeur de position, suivez les démonstrations pas à pas et entraînez-vous avec quatre jeux.\n\nUtilisez les neuf tiges ou entraînez-vous sur une seule. Faites pivoter la vue, zoomez, consultez les valeurs de position et effectuez vous-même les retenues.\n\nQuatre jeux proposent des démonstrations et des exercices : Trois doublements, La ronde des nombres, Retour à zéro et Un nombre, plusieurs formes. Mettez en pause, reprenez, avancez pas à pas et vérifiez vos propres positions. Retour à zéro propose 10, 20 ou 100 étapes.\n\nLa narration facultative lit de courtes consignes de calcul avec les voix système installées. Disponible en anglais, chinois simplifié et traditionnel, espagnol, allemand, français, coréen, japonais et malais.",
+        "promotional_text": "Explorez un boulier chinois dans une fenêtre visionOS. Déplacez les perles 3D, découvrez leur valeur et pratiquez quatre jeux avec des démonstrations."
+      },
+      "ja": {
+        "name": "SuanCraft",
+        "subtitle": "中国式3Dそろばん・珠算練習",
+        "description": "visionOSのウィンドウで、上珠2つ・下珠5つの中国式そろばんを3Dで操作。珠を動かして数位を確かめ、お手本を見て4つのゲームを自分で練習できます。\n\n九桁のそろばんと、拡大した一桁の練習を選べます。表示を回転・拡大して位の値を確認でき、繰り上がりや繰り下がりは自分で操作します。\n\n「3回の2倍チャレンジ」「数字の回転木馬」「百子還元」「同じ数、違う珠の形」の4つのゲームで、お手本と手動練習を用意しました。一時停止、再開、1ステップずつの再生に対応し、練習では実際の珠の配置を確認します。「百子還元」は10・20・100ステップを選べます。\n\n任意の音声案内は、インストール済みのシステム音声で計算の要点だけを読み上げます。英語、中国語簡体字・繁体字、スペイン語、ドイツ語、フランス語、韓国語、日本語、マレー語に対応しています。",
+        "promotional_text": "visionOSのウィンドウで中国式3Dそろばんを体験。珠を動かして位の値を確かめ、お手本を見ながら4つのゲームを自分で練習できます。"
+      },
+      "ko": {
+        "name": "SuanCraft",
+        "subtitle": "중국식 3D 주판과 계산 연습",
+        "description": "visionOS 창에서 윗알 2개·아랫알 5개의 중국식 3D 주판을 직접 움직여 보세요. 자릿값을 살펴보고 단계별 시범을 따라 네 가지 게임을 연습할 수 있습니다.\n\n아홉 자릿수 주판이나 확대된 한 자릿수 연습을 선택하세요. 화면을 회전하고 확대하며 자릿값을 살펴보고, 올림과 내림은 직접 처리합니다.\n\n세 번 두 배 만들기, 회전하는 숫자, 다시 영으로, 같은 수, 다른 구슬 등 네 가지 게임에서 시범과 직접 연습을 제공합니다. 시범을 일시 정지하거나 계속하고 한 단계씩 볼 수 있으며, 연습에서는 실제 알의 배치를 확인합니다. 다시 영으로는 10, 20, 100단계를 지원합니다.\n\n선택형 음성 안내는 설치된 시스템 음성으로 핵심 계산 구절만 읽습니다. 영어, 중국어 간체·번체, 스페인어, 독일어, 프랑스어, 한국어, 일본어, 말레이어를 지원합니다.",
+        "promotional_text": "visionOS 창에서 중국식 3D 주판을 관찰하고 움직여 보세요. 자릿값을 살펴보고 단계별 시범을 따라 네 가지 게임을 직접 연습할 수 있습니다."
+      },
+      "ms": {
+        "name": "SuanCraft",
+        "subtitle": "Abakus Cina 3D & latihan",
+        "description": "Dalam tetingkap visionOS, gerakkan manik abakus Cina dengan dua manik atas dan lima manik bawah pada setiap batang. Fahami nilai tempat, ikuti demonstrasi langkah demi langkah dan berlatih melalui empat permainan.\n\nGunakan abakus sembilan batang atau berlatih dengan satu batang yang diperbesar. Putar dan zum paparan, lihat nilai tempat dan lakukan bawa atau pinjam secara manual.\n\nEmpat permainan menyediakan demonstrasi dan latihan: Darab dua, tiga kali, Karusel nombor, Kembali ke sifar dan Nombor sama, manik berbeza. Jeda, sambung atau mainkan satu langkah pada satu masa, kemudian semak susunan manik anda. Kembali ke sifar menawarkan 10, 20 atau 100 langkah.\n\nNarasi pilihan menggunakan suara sistem yang dipasang untuk membaca petunjuk aritmetik utama. Menyokong bahasa Inggeris, Cina Ringkas dan Tradisional, Sepanyol, Jerman, Perancis, Korea, Jepun dan Melayu.",
+        "promotional_text": "Terokai abakus Cina dalam tetingkap visionOS. Gerakkan manik 3D, fahami nilai tempat dan ikuti demonstrasi untuk mencuba empat permainan."
+      },
+      "zh-Hans": {
+        "name": "SuanCraft",
+        "subtitle": "三维算盘：拨珠练习与珠算游戏",
+        "description": "在 visionOS 窗口中，亲手拨动上二下五的中式三维算盘，观察算珠怎样组成数字。SuanCraft 提供九档与单档体验、数位解释和逐步演示，让你在四个算盘游戏中自己拨珠练习。\n\n可使用九档算盘或放大的单档练习，旋转、缩放视角，查看各档位权及数字含义。进退位由你亲手完成。\n\n内置三次翻倍、数字走马灯、百子还原、同数异形四个游戏，均支持观看演示和手动练习。演示可暂停、继续和单步播放；练习核对实际珠式。百子还原可选10、20或100步。\n\n可选系统配音只朗读关键算术提示，使用设备已安装的语音。支持英语、简体中文、繁体中文、西班牙语、德语、法语、韩语、日语及马来语。",
+        "promotional_text": "在 visionOS 窗口里观察、拨动中式三维算盘。探索珠位与数位，跟随逐珠演示，自己完成四个算盘游戏。"
+      },
+      "zh-Hant": {
+        "name": "SuanCraft",
+        "subtitle": "立體算盤：撥珠練習與珠算遊戲",
+        "description": "在 visionOS 視窗中，親手撥動上二下五的中式立體算盤，觀察算珠如何組成數字。SuanCraft 提供九檔與單檔體驗、位值解說和逐步示範，讓你在四個算盤遊戲中自己撥珠練習。\n\n可使用九檔算盤或放大的單檔練習，旋轉、縮放視角，查看各檔位值及數字含義。進退位由你親手完成。\n\n內建三次翻倍、數字走馬燈、百子還原、同數異形四個遊戲，均支援觀看示範與手動練習。示範可暫停、繼續及逐步播放；練習核對實際珠式。百子還原可選10、20或100步。\n\n可選系統配音只朗讀關鍵算術提示，使用裝置已安裝的語音。支援英語、簡體中文、繁體中文、西班牙語、德語、法語、韓語、日語及馬來語。",
+        "promotional_text": "在 visionOS 視窗裡觀察、撥動中式立體算盤。探索珠位與位值，跟隨逐珠示範，自己完成四個算盤遊戲。"
+      }
+    }
+  }
+}

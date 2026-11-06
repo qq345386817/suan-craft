@@ -12,12 +12,74 @@
     "zh-Hans",
     "zh-Hant"
   ],
-  "version": "0.1.0",
-  "build": "8",
+  "version": "1.0",
+  "build": "13",
   "minimumOS": {
     "iOS": "18.0",
     "iPadOS": "18.0",
     "macOS": "15.0",
     "visionOS": "2.0"
-  }
+  },
+  "games": [
+    {
+      "id": "doubling",
+      "formula": "123456789 × 2 × 2 × 2 + 9 = 987654321",
+      "titles": {
+        "de": "Dreimal verdoppeln",
+        "en-US": "Double three times",
+        "es": "Duplicar tres veces",
+        "fr": "Trois doublements",
+        "ja": "3回の2倍チャレンジ",
+        "ko": "세 번 두 배 만들기",
+        "ms": "Darab dua, tiga kali",
+        "zh-Hans": "三次翻倍",
+        "zh-Hant": "三次翻倍"
+      }
+    },
+    {
+      "id": "carousel",
+      "formula": "142857 → 285714 → … → 999999",
+      "titles": {
+        "de": "Zahlenkarussell",
+        "en-US": "Number carousel",
+        "es": "Números en rotación",
+        "fr": "La ronde des nombres",
+        "ja": "数字の回転木馬",
+        "ko": "회전하는 숫자",
+        "ms": "Karusel nombor",
+        "zh-Hans": "数字走马灯",
+        "zh-Hant": "數字走馬燈"
+      }
+    },
+    {
+      "id": "hundredReturn",
+      "formula": "5050 − 1 − 2 − … − 100 = 0",
+      "titles": {
+        "de": "Zurück auf null",
+        "en-US": "Return to zero",
+        "es": "Volver a cero",
+        "fr": "Retour à zéro",
+        "ja": "百子還元",
+        "ko": "다시 영으로",
+        "ms": "Kembali ke sifar",
+        "zh-Hans": "百子还原",
+        "zh-Hant": "百子還原"
+      }
+    },
+    {
+      "id": "equivalent",
+      "formula": "5 + 5 = 5 + 1 + 1 + 1 + 1 + 1 = 10",
+      "titles": {
+        "de": "Gleiche Zahl, andere Kugeln",
+        "en-US": "Same number, different beads",
+        "es": "Un número, distintas formas",
+        "fr": "Un nombre, plusieurs formes",
+        "ja": "同じ数、違う珠の形",
+        "ko": "같은 수, 다른 구슬",
+        "ms": "Nombor sama, manik berbeza",
+        "zh-Hans": "同数异形",
+        "zh-Hant": "同數異形"
+      }
+    }
+  ]
 }

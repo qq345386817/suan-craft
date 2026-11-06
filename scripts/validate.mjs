@@ -8,6 +8,14 @@ const expected = ['de','en-US','es','fr','ja','ko','ms','zh-Hans','zh-Hant'];
 assert.deepEqual([...app.languages].sort(), expected);
 assert.equal(app.sourceLanguage, 'en-US');
 const source = JSON.parse(fs.readFileSync(path.join(root,'content/en-US.json')));
+const store = JSON.parse(fs.readFileSync(path.join(root,'content/store-metadata.json')));
+assert.equal(store.source,'local-fastlane');
+assert.equal(store.published,false);
+assert.equal(app.games.length,4);
+for (const listings of Object.values(store.platforms)) {
+  assert.deepEqual(Object.keys(listings).sort(),expected);
+  for (const listing of Object.values(listings)) assert.equal(listing.name,'SuanCraft');
+}
 for (const locale of expected) {
   const copy = JSON.parse(fs.readFileSync(path.join(root,`content/${locale}.json`)));
   assert.deepEqual(Object.keys(copy).sort(),Object.keys(source).sort(),`${locale}: missing translation keys`);
@@ -37,9 +45,25 @@ for (const file of pages) {
     if(target.hash && targetFile.endsWith('.html')) assert.ok(fs.readFileSync(targetFile,'utf8').includes(`id="${decodeURIComponent(target.hash.slice(1))}"`),`${file}: missing anchor ${link}`);
   }
   const ld = html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s);
-  assert.equal(JSON.parse(ld[1]).url,url);
+  const schema = JSON.parse(ld[1]);
+  assert.equal(schema.url,url);
+  const locale = html.match(/<html lang="([^"]+)"/)[1];
+  const copy = JSON.parse(fs.readFileSync(path.join(root,`content/${locale}.json`)));
+  if(schema['@type']==='SoftwareApplication') {
+    assert.ok(html.includes(`<title>${copy['seo.homeTitle'].replaceAll('&','&amp;')}</title>`));
+    assert.equal((html.match(/class="game-card"/g)||[]).length,4);
+    assert.equal(schema.featureList.length,6);
+    assert.ok(!schema.offers && !schema.aggregateRating && !schema.softwareVersion,'Do not invent public price, ratings or a released version');
+  }
+  if(url.endsWith('/help/')) {
+    for(const game of app.games) assert.ok(html.includes(`id="${game.id}"`));
+    assert.equal((html.match(/<details class="faq">/g)||[]).length,4);
+  }
 }
 assert.equal((fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8').match(/<loc>/g)||[]).length,27);
 assert.ok(fs.readFileSync(path.join(dist,'_redirects'),'utf8').includes('/en-US/* /:splat 301'));
 assert.ok(fs.existsSync(path.join(dist,'404.html')));
+const deployment=JSON.parse(fs.readFileSync(path.join(dist,'deployment.json')));
+assert.match(deployment.commit,/^[a-f0-9]{40}$/);
+assert.equal(deployment.productStatus,'testing');
 console.log('PASS: 9 complete locales; 27 canonical pages; internal links, anchors, assets, metadata and path redirects.');
