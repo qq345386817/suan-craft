@@ -40,6 +40,8 @@ Use the canonical property `https://suan-craft.luopeike.com/` and submit `https:
 
 `public/google8bdd3bd447b6e703.html` and `public/BingSiteAuth.xml` are the official, publicly served ownership files downloaded from the existing Google and Bing accounts. Keep both files unchanged and tracked after verification so future deployments retain ownership. `build.mjs` copies them to the output root; they are not product pages and are not added to the sitemap. Submission acceptance and actual indexing are separate results.
 
+Google verified the HTML file. Bing's XML fetch failed, so ownership uses a dedicated DNS-only CNAME: `3e48d0a44f761acc68eb56f04e379b7b.suan-craft.luopeike.com` → `verify.bing.com`. Keep that verification record as well as the existing proxied website CNAME. Both sitemaps were submitted on 2026-11-09; the observed results and evidence boundaries are recorded in [Search consoles](docs/SEARCH_CONSOLES.md).
+
 ## Assets and privacy
 
 `public/assets/abacus.jpg` is the retained crop of the real App's completed 987654321 demonstration, captured during the 2026-11-05 iPhone QA session. The original QA screenshot was removed during the parent project's storage cleanup; this published product asset remains tracked here. It is a product image, not an interactive browser abacus. The icon is the App's existing icon. The site loads no third-party fonts, analytics or advertising scripts. Generated visual concepts and QA evidence are kept outside this repository. Keep the product image and icon tracked; exclude `dist/`, local credentials and generated QA captures from commits.
