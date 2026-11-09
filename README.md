@@ -34,6 +34,12 @@ Add the custom domain in the Pages project before creating its Cloudflare DNS re
 
 There is currently no public App Store listing or public TestFlight join link. Do not add a download button until distribution is verified. Public support and privacy contact: `cameoshell09@gmail.com`.
 
+## Search engine verification
+
+Use the canonical property `https://suan-craft.luopeike.com/` and submit `https://suan-craft.luopeike.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools. The sitemap contains the 27 canonical home/help/privacy URLs across nine locales; the Pages default domain redirects to this custom domain.
+
+`public/google8bdd3bd447b6e703.html` and `public/BingSiteAuth.xml` are the official, publicly served ownership files downloaded from the existing Google and Bing accounts. Keep both files unchanged and tracked after verification so future deployments retain ownership. `build.mjs` copies them to the output root; they are not product pages and are not added to the sitemap. Submission acceptance and actual indexing are separate results.
+
 ## Assets and privacy
 
 `public/assets/abacus.jpg` is the retained crop of the real App's completed 987654321 demonstration, captured during the 2026-11-05 iPhone QA session. The original QA screenshot was removed during the parent project's storage cleanup; this published product asset remains tracked here. It is a product image, not an interactive browser abacus. The icon is the App's existing icon. The site loads no third-party fonts, analytics or advertising scripts. Generated visual concepts and QA evidence are kept outside this repository. Keep the product image and icon tracked; exclude `dist/`, local credentials and generated QA captures from commits.
