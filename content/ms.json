@@ -31,7 +31,7 @@
   "help.voiceTitle": "Dengar petua kiraan utama.",
   "help.voiceBody": "Aktifkan panduan suara dalam pengenalan atau menu paparan. Hanya petua aritmetik utama dibaca; penerangan kekal pada skrin. Suara bergantung pada suara sistem yang dipasang. Pada iPhone, panduan suara yang diaktifkan boleh dimainkan dalam mod Senyap; semak kelantangan media dan output audio. Bunyi manik mempunyai suis berasingan.",
   "help.troubleTitle": "Beberapa perkara penting.",
-  "help.troubleBody": "Perubahan manik secara manual dikunci semasa demonstrasi, termasuk ketika dijeda. Pilih latihan atau keluar daripada permainan untuk menggerakkan manik sendiri. Pulihkan paparan jika model sukar dilihat. Jika tiada suara yang sepadan, teks panduan kekal kelihatan. Kedudukan manik dan kemajuan hanya bertahan sepanjang sesi tetingkap semasa; pilihan suara disimpan pada peranti.",
+  "help.troubleBody": "Perubahan manik secara manual dikunci semasa demonstrasi, termasuk ketika dijeda. Pilih latihan atau keluar daripada permainan untuk menggerakkan manik sendiri. Pulihkan paparan jika model sukar dilihat. Jika tiada suara yang sepadan, teks panduan kekal kelihatan. Kedudukan manik dan kemajuan permainan abakus hanya bertahan sepanjang sesi tetingkap semasa; pilihan suara disimpan pada peranti.",
   "help.contactTitle": "Hubungi kami.",
   "help.contactBody": "E-melkan versi aplikasi, peranti, versi sistem dan langkah menghasilkan semula masalah. Elakkan maklumat peribadi sensitif. Anda juga boleh melaporkan pepijat di GitHub; laporan tersebut adalah awam.",
   "help.compatibility": "Versi sistem minimum",
@@ -41,7 +41,7 @@
   "privacy.lead": "Perkara yang kekal pada peranti anda dan perkara yang berlaku apabila melawat laman ini atau menghubungi kami.",
   "privacy.updated": "Dikemas kini",
   "privacy.appTitle": "Aplikasi",
-  "privacy.appBody": "SuanCraft tidak menghantar kedudukan manik atau kemajuan pelajaran kepada pembangun. Aplikasi tidak mempunyai akaun, iklan atau SDK analitik pihak ketiga. Kedudukan dan kemajuan kekal dalam memori sesi tetingkap semasa. Pilihan panduan suara disimpan pada peranti anda.",
+  "privacy.appBody": "SuanCraft tidak menghantar kedudukan manik atau kemajuan pelajaran kepada pembangun. Aplikasi tidak mempunyai akaun, iklan atau SDK analitik pihak ketiga. Pilihan panduan suara disimpan pada peranti anda. Satu latihan pendek batang kira yang belum selesai boleh disimpan dan disambung pada peranti yang sama.",
   "privacy.voiceTitle": "Suara sistem",
   "privacy.voiceBody": "Panduan suara menggunakan teks ke pertuturan sistem Apple dan suara dipasang yang tersedia. SuanCraft tidak meminta akses mikrofon atau merakam suara anda. Apple mengurus suara, muat turun dan perkhidmatan sistem mengikut dasarnya sendiri, termasuk ujian dan diagnostik TestFlight.",
   "privacy.webTitle": "Laman web ini",
@@ -71,7 +71,11 @@
   "faq.carry.question": "Adakah bawa dilakukan secara automatik?",
   "faq.carry.answer": "Anda melakukan bawa dan pinjam sendiri. Jumlah mengikut kedudukan manik sebenar dan nilai tempat.",
   "faq.progress.question": "Adakah kemajuan disimpan?",
-  "faq.progress.answer": "Kedudukan manik dan kemajuan permainan hanya kekal dalam sesi tetingkap semasa. Pilihan narasi disimpan pada peranti.",
+  "faq.progress.answer": "Kedudukan manik dan kemajuan permainan hanya kekal dalam sesi tetingkap semasa. Pilihan narasi disimpan pada peranti. Satu latihan pendek batang kira yang belum selesai boleh disimpan dan disambung pada peranti yang sama.",
   "faq.voice.question": "Bagaimanakah narasi berfungsi?",
-  "faq.voice.answer": "Teks ke pertuturan sistem pilihan membaca petunjuk aritmetik utama menggunakan suara yang dipasang. Penjelasan kekal pada skrin."
+  "faq.voice.answer": "Teks ke pertuturan sistem pilihan membaca petunjuk aritmetik utama menggunakan suara yang dipasang. Penjelasan kekal pada skrin.",
+  "home.rodsTitle": "Batang kira",
+  "home.rodsBody": "Seret batang ke papan enam nilai tempat. Bentukkan 603, alihkannya menjadi 6030 dan berlatih membawa secara manual.",
+  "help.rodsTitle": "Batang kira",
+  "help.rodsBody": "Pilih batang kira daripada menu alat. Seret batang daripada dulang ke baris utama. Selang-selikan bentuk menegak dan melintang pada tempat bersebelahan. Kosongkan tempat puluh bagi 603. Kumpulan sementara membantu menyediakan pertukaran. Gunakan tindakan menggabungkan, membawa atau meminjam untuk melengkapkan pertukaran."
 }

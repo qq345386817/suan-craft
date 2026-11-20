@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const app = JSON.parse(fs.readFileSync(path.join(root,'content/app.json')));
-const expected = ['de','en-US','es','fr','ja','ko','ms','zh-Hans','zh-Hant'];
+const expected = ['ar','de','en-US','es','fr','hi','ja','ko','ms','ru','zh-Hans','zh-Hant'];
 assert.deepEqual([...app.languages].sort(), expected);
 assert.equal(app.sourceLanguage, 'en-US');
 const source = JSON.parse(fs.readFileSync(path.join(root,'content/en-US.json')));
@@ -25,13 +25,13 @@ const dist = path.join(root,'dist');
 const pages = [];
 const walk = dir => { for (const entry of fs.readdirSync(dir,{withFileTypes:true})) { const p = path.join(dir,entry.name); if(entry.isDirectory())walk(p); else if(entry.name==='index.html')pages.push(p); } };
 walk(dist);
-assert.equal(pages.length,27);
+assert.equal(pages.length,expected.length * 3);
 for (const file of pages) {
   const html = fs.readFileSync(file,'utf8');
   const pathname = '/' + path.relative(dist,path.dirname(file)).replaceAll(path.sep,'/') + '/';
   const url = 'https://suan-craft.luopeike.com' + (pathname==='//'?'/':pathname);
   assert.ok(html.includes(`rel="canonical" href="${url}"`),`${file}: canonical`);
-  assert.equal((html.match(/rel="alternate" hreflang=/g)||[]).length,10,`${file}: alternate links`);
+  assert.equal((html.match(/rel="alternate" hreflang=/g)||[]).length,expected.length + 1,`${file}: alternate links`);
   assert.ok(!/undefined|TODO|Lorem ipsum/.test(html),`${file}: unfinished copy`);
   assert.ok(!/apps\.apple\.com|testflight\.apple\.com\/join/.test(html),`${file}: unverified public download`);
   for (const match of html.matchAll(/(?:href|src)="([^"<>]+)"/g)) {
@@ -49,21 +49,31 @@ for (const file of pages) {
   assert.equal(schema.url,url);
   const locale = html.match(/<html lang="([^"]+)"/)[1];
   const copy = JSON.parse(fs.readFileSync(path.join(root,`content/${locale}.json`)));
+  assert.ok(html.includes(`<html lang="${locale}" dir="${locale === 'ar' ? 'rtl' : 'ltr'}">`));
+  assert.equal(schema.inLanguage, locale);
+  for (const alternate of expected) assert.ok(html.includes(`hreflang="${alternate}"`));
   if(schema['@type']==='SoftwareApplication') {
     assert.ok(html.includes(`<title>${copy['seo.homeTitle'].replaceAll('&','&amp;')}</title>`));
     assert.equal((html.match(/class="game-card"/g)||[]).length,4);
-    assert.equal(schema.featureList.length,6);
+    assert.equal(schema.featureList.length,7);
     assert.ok(!schema.offers && !schema.aggregateRating && !schema.softwareVersion,'Do not invent public price, ratings or a released version');
   }
   if(url.endsWith('/help/')) {
+    assert.ok(html.includes('id="counting-rods"'));
     for(const game of app.games) assert.ok(html.includes(`id="${game.id}"`));
     assert.equal((html.match(/<details class="faq">/g)||[]).length,4);
   }
 }
-assert.equal((fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8').match(/<loc>/g)||[]).length,27);
+assert.equal((fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8').match(/<loc>/g)||[]).length,expected.length * 3);
 assert.ok(fs.readFileSync(path.join(dist,'_redirects'),'utf8').includes('/en-US/* /:splat 301'));
-assert.ok(fs.existsSync(path.join(dist,'404.html')));
+for (const locale of expected) {
+  const route = locale === app.sourceLanguage ? '' : locale;
+  const html = fs.readFileSync(path.join(dist,route,'404.html'),'utf8');
+  assert.ok(html.includes(`lang="${locale}" dir="${locale === 'ar' ? 'rtl' : 'ltr'}"`));
+  assert.ok(html.includes('<meta name="robots" content="noindex">'));
+  assert.ok(html.includes(`href="/${route ? route + '/' : ''}help/"`));
+}
 const deployment=JSON.parse(fs.readFileSync(path.join(dist,'deployment.json')));
 assert.match(deployment.commit,/^[a-f0-9]{40}$/);
 assert.equal(deployment.productStatus,'testing');
-console.log('PASS: 9 complete locales; 27 canonical pages; internal links, anchors, assets, metadata and path redirects.');
+console.log(`PASS: ${expected.length} complete locales; ${pages.length} canonical pages; internal links, anchors, assets, metadata and path redirects.`);

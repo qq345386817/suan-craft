@@ -11,7 +11,14 @@ http.createServer((req,res)=>{
   let target = file;
   if(fs.existsSync(target) && fs.statSync(target).isDirectory())target=path.join(target,'index.html');
   const found = fs.existsSync(target) && fs.statSync(target).isFile();
-  if(!found)target=path.join(dist,'404.html');
+  if (!found) {
+    let directory = fs.existsSync(file) && fs.statSync(file).isDirectory() ? file : path.dirname(file);
+    if (file === dist) directory = dist;
+    while (directory.startsWith(dist+path.sep) && !fs.existsSync(path.join(directory,'404.html'))) {
+      directory = path.dirname(directory);
+    }
+    target = path.join(directory,'404.html');
+  }
   res.writeHead(found?200:404,{'Content-Type':mime[path.extname(target)]||'application/octet-stream','Cache-Control':'no-store'});
   fs.createReadStream(target).pipe(res);
 }).listen(Number(process.env.PORT||4173),'127.0.0.1',()=>console.log('Preview: http://127.0.0.1:'+(process.env.PORT||4173)));

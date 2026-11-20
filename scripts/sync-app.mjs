@@ -18,7 +18,7 @@ const snapshot = {
 const gameKeys = {doubling:'game.title',carousel:'games.carousel.title',hundredReturn:'games.hundredReturn.title',equivalent:'games.equivalent.title'};
 const formulas = {doubling:'123456789 × 2 × 2 × 2 + 9 = 987654321',carousel:'142857 → 285714 → … → 999999',hundredReturn:'5050 − 1 − 2 − … − 100 = 0',equivalent:'5 + 5 = 5 + 1 + 1 + 1 + 1 + 1 = 10'};
 snapshot.games = Object.entries(gameKeys).map(([id,key]) => ({id,formula:formulas[id],titles:Object.fromEntries(languages.map(l=>[l,catalog.strings[key].localizations[l].stringUnit.value]))}));
-const localeMap = {'en-US':'en-US','zh-Hans':'zh-Hans','zh-Hant':'zh-Hant',es:'es-ES',de:'de-DE',fr:'fr-FR',ko:'ko',ja:'ja',ms:'ms'};
+const localeMap = {'en-US':'en-US','zh-Hans':'zh-Hans','zh-Hant':'zh-Hant',es:'es-ES',de:'de-DE',fr:'fr-FR',ko:'ko',ja:'ja',ms:'ms',ar:'ar-SA',hi:'hi',ru:'ru'};
 const metadata = {source:'local-fastlane',published:false,platforms:{}};
 for (const platform of ['ios','macos','visionos']) {
   metadata.platforms[platform] = Object.fromEntries(languages.map(l=>[l,Object.fromEntries(['name','subtitle','description','promotional_text'].map(field=>[field,fs.readFileSync(path.join(appRoot,'fastlane',`metadata_${platform}`,localeMap[l],`${field}.txt`),'utf8').trim()]))]));

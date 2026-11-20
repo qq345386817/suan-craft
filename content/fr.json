@@ -31,7 +31,7 @@
   "help.voiceTitle": "Écoutez les formules essentielles.",
   "help.voiceBody": "Activez la narration dans la présentation ou le menu Vue. Seules les formules arithmétiques essentielles sont lues ; les explications restent à l’écran. Les voix disponibles dépendent de celles installées sur l’appareil. Sur iPhone, la narration activée peut être audible en mode Silence ; vérifiez le volume multimédia et la sortie audio. Les bruits des boules ont leur propre interrupteur.",
   "help.troubleTitle": "Quelques points utiles.",
-  "help.troubleBody": "La modification manuelle des boules est bloquée pendant la démonstration, même en pause. Choisissez la pratique ou quittez le jeu pour agir vous-même. Rétablissez la vue si le modèle est difficile à voir. Sans voix compatible, les sous-titres restent affichés. Positions et progression durent uniquement pendant la session de fenêtre ; la préférence de narration est enregistrée localement.",
+  "help.troubleBody": "La modification manuelle des boules est bloquée pendant la démonstration, même en pause. Choisissez la pratique ou quittez le jeu pour agir vous-même. Rétablissez la vue si le modèle est difficile à voir. Sans voix compatible, les sous-titres restent affichés. La position des boules et la progression des jeux de boulier restent dans la session de fenêtre. La préférence de narration est enregistrée sur l’appareil.",
   "help.contactTitle": "Contactez-nous.",
   "help.contactBody": "Indiquez par e-mail la version de l’app, votre appareil, la version du système et les étapes pour reproduire le problème. Évitez les données personnelles sensibles. Vous pouvez aussi signaler un bug sur GitHub ; ces signalements sont publics.",
   "help.compatibility": "Versions minimales du système",
@@ -41,7 +41,7 @@
   "privacy.lead": "Ce qui reste sur votre appareil et ce qui se passe sur ce site ou lorsque vous nous contactez.",
   "privacy.updated": "Dernière mise à jour",
   "privacy.appTitle": "L’application",
-  "privacy.appBody": "SuanCraft n’envoie au développeur ni les positions des boules ni la progression des leçons. L’app ne comporte ni comptes, ni publicité, ni SDK d’analyse tiers. Positions et progression restent en mémoire pendant la session de fenêtre. Votre préférence de narration est enregistrée sur votre appareil.",
+  "privacy.appBody": "SuanCraft n’envoie au développeur ni les positions des boules ni la progression des leçons. L’app ne comporte ni comptes, ni publicité, ni SDK d’analyse tiers. Votre préférence de narration est enregistrée sur votre appareil. Vous pouvez enregistrer un exercice court inachevé et le reprendre sur le même appareil.",
   "privacy.voiceTitle": "Voix du système",
   "privacy.voiceBody": "La narration utilise la synthèse vocale d’Apple et les voix installées disponibles. SuanCraft ne demande pas le microphone et n’enregistre pas votre voix. Apple gère les voix, téléchargements et services système selon ses propres règles, ainsi que les tests et diagnostics TestFlight.",
   "privacy.webTitle": "Ce site web",
@@ -71,7 +71,11 @@
   "faq.carry.question": "Les retenues sont-elles automatiques ?",
   "faq.carry.answer": "Vous effectuez les retenues et les emprunts vous-même. Le total suit les positions réelles des boules et leurs valeurs de position.",
   "faq.progress.question": "La progression est-elle enregistrée ?",
-  "faq.progress.answer": "Les boules et la progression restent dans la session de fenêtre actuelle. La préférence de narration est conservée localement.",
+  "faq.progress.answer": "Les boules et la progression restent dans la session de fenêtre actuelle. La préférence de narration est conservée localement. Vous pouvez enregistrer un exercice court inachevé et le reprendre sur le même appareil.",
   "faq.voice.question": "Comment fonctionne la narration ?",
-  "faq.voice.answer": "La synthèse vocale facultative lit les indications de calcul essentielles avec les voix installées. Les explications restent à l’écran."
+  "faq.voice.answer": "La synthèse vocale facultative lit les indications de calcul essentielles avec les voix installées. Les explications restent à l’écran.",
+  "home.rodsTitle": "Baguettes de calcul",
+  "home.rodsBody": "Glissez les baguettes sur un plateau à six positions. Formez 603, décalez-le pour obtenir 6030, puis entraînez-vous à faire la retenue à la main.",
+  "help.rodsTitle": "Baguettes de calcul",
+  "help.rodsBody": "Choisissez les baguettes dans le menu des instruments. Glissez-les du bac vers la rangée principale. Alternez les formes verticales et horizontales d’une position à l’autre. Pour 603, laissez les dizaines vides. Les groupes auxiliaires préparent l’échange. Utilisez la commande de regroupement, de retenue ou d’emprunt pour l’effectuer."
 }

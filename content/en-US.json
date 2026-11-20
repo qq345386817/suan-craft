@@ -31,7 +31,7 @@
   "help.voiceTitle": "Listen to the key chants.",
   "help.voiceBody": "Enable Lesson narration in the introduction or View menu. Only essential arithmetic chants are spoken; explanations stay on screen. Voices depend on those installed on your device. On iPhone, enabled narration can play in Silent mode; check media volume and the audio output. Bead sound effects have a separate switch.",
   "help.troubleTitle": "A few things to know.",
-  "help.troubleBody": "Manual bead editing is locked during the demonstration, even when paused. Choose practice or leave the game to move beads yourself. Use Reset view if the model is hard to see. If a matching system voice is unavailable, captions remain visible. Bead positions and lesson progress last only for the current window session; the narration preference is stored locally.",
+  "help.troubleBody": "Manual bead editing is locked during the demonstration, even when paused. Choose practice or leave the game to move beads yourself. Use Reset view if the model is hard to see. If a matching system voice is unavailable, captions remain visible. Abacus bead positions and game progress last for the current window session. The narration preference is stored locally.",
   "help.contactTitle": "Get in touch.",
   "help.contactBody": "Email us with your app version, device, OS version and steps to reproduce the problem. Please avoid sending sensitive personal information. You can also report a bug on GitHub; GitHub reports are public.",
   "help.compatibility": "Minimum system versions",
@@ -41,7 +41,7 @@
   "privacy.lead": "What stays on your device, and what happens when you visit this site or contact us.",
   "privacy.updated": "Last updated",
   "privacy.appTitle": "The App",
-  "privacy.appBody": "SuanCraft does not send your bead positions or lesson progress to the developer. The App has no accounts, advertising or third-party analytics SDKs. Bead positions and progress remain in memory for the current window session. Your narration preference is saved locally on your device.",
+  "privacy.appBody": "SuanCraft does not send your bead positions or lesson progress to the developer. The App has no accounts, advertising or third-party analytics SDKs. Your narration preference is saved locally on your device. One unfinished counting-rod short practice can be saved and resumed on the same device.",
   "privacy.voiceTitle": "System speech",
   "privacy.voiceBody": "Lesson narration uses Apple’s system text-to-speech and available installed voices. SuanCraft does not request microphone access or record your voice. Apple manages system voices, downloads and platform services under its own policies. TestFlight testing and diagnostics are also handled by Apple.",
   "privacy.webTitle": "This website",
@@ -71,7 +71,11 @@
   "faq.carry.question": "Are carries automatic?",
   "faq.carry.answer": "No. You move beads and carry or borrow manually. The displayed total is calculated from the actual bead positions and place values.",
   "faq.progress.question": "Is progress saved?",
-  "faq.progress.answer": "Bead positions and game progress last for the current window session. The narration preference is stored locally.",
+  "faq.progress.answer": "Bead positions and game progress last for the current window session. The narration preference is stored locally. One unfinished counting-rod short practice can be saved and resumed on the same device.",
   "faq.voice.question": "How does narration work?",
-  "faq.voice.answer": "Optional system text-to-speech speaks key arithmetic cues using installed voices. Explanations remain on screen."
+  "faq.voice.answer": "Optional system text-to-speech speaks key arithmetic cues using installed voices. Explanations remain on screen.",
+  "home.rodsTitle": "Counting rods",
+  "home.rodsBody": "Drag rods onto a six-place board. Make 603, shift it one place to make 6030, and practise carrying by hand.",
+  "help.rodsTitle": "Counting rods",
+  "help.rodsBody": "Use the Instruments menu to switch to Counting Rods. Drag rods from the tray to the main row. Alternate vertical and horizontal forms in adjacent places, and leave tens empty for zero in 603. In a lesson, the staging groups help you prepare an exchange. Use Combine / carry or Borrow one place to perform it."
 }

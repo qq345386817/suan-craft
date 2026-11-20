@@ -17,7 +17,7 @@ Open <http://127.0.0.1:4173>. The preview server does not emulate Cloudflare red
 
 ## Languages and App alignment
 
-English (US) is the source language at `/`. Eight additional locales match the App: `zh-Hans`, `zh-Hant`, `es`, `de`, `fr`, `ko`, `ja`, `ms`. Every locale has its own home, help and privacy page. Language switching preserves the current page and anchor; no preference cookie is used.
+English (US) is the source language at `/`. The additional App locales are `zh-Hans`, `zh-Hant`, `es`, `de`, `fr`, `ko`, `ja`, `ms`, `ar`, `hi`, `ru`. Every locale has its own home, help and privacy page. Language switching preserves the current page and anchor; no preference cookie is used.
 
 `content/app.json` is a committed snapshot of the native App's locales, minimum OS versions and release version. While this repository is checked out inside the native project, run `npm run sync:app` after changing those settings or Fastlane metadata and `npm run check:app` to detect drift. Cloudflare builds are independent of the parent checkout. Translated copy lives in `content/<locale>.json`; validation rejects missing or empty keys.
 
@@ -32,11 +32,11 @@ English (US) is the source language at `/`. Eight additional locales match the A
 
 Add the custom domain in the Pages project before creating its Cloudflare DNS record. Use an account-level Cloudflare Bulk Redirect list and enabled rule for `suan-craft.pages.dev` → `https://suan-craft.luopeike.com` with status 301. Enable Preserve query string, Subpath matching and Preserve path suffix; leave Include subdomains disabled to retain preview URLs. Domain-level sources are not supported in Pages `_redirects`. `public/_redirects` keeps English and legacy support/privacy path aliases. `public/_headers` adds basic response headers. A real `404.html` prevents SPA fallback.
 
-There is currently no public App Store listing or public TestFlight join link. Do not add a download button until distribution is verified. Public support and privacy contact: `cameoshell09@gmail.com`.
+For support and privacy questions, email `cameoshell09@gmail.com`.
 
 ## Search engine verification
 
-Use the canonical property `https://suan-craft.luopeike.com/` and submit `https://suan-craft.luopeike.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools. The sitemap contains the 27 canonical home/help/privacy URLs across nine locales; the Pages default domain redirects to this custom domain.
+Use the canonical property `https://suan-craft.luopeike.com/` and submit `https://suan-craft.luopeike.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools. The sitemap contains the 36 canonical home, help and privacy URLs across twelve locales; the Pages default domain redirects to this custom domain.
 
 `public/google8bdd3bd447b6e703.html` and `public/BingSiteAuth.xml` are the official, publicly served ownership files downloaded from the existing Google and Bing accounts. Keep both files unchanged and tracked after verification so future deployments retain ownership. `build.mjs` copies them to the output root; they are not product pages and are not added to the sitemap. Submission acceptance and actual indexing are separate results.
 
@@ -48,6 +48,8 @@ Google verified the HTML file. Bing's XML fetch failed, so ownership uses a dedi
 
 ## Product copy, SEO and release facts
 
-Home/help SEO titles and descriptions are maintained in all nine content files independently of the short hero slogan. Four game names are copied from the App catalog; summaries, guides and collapsible FAQ describe the current two-upper/five-lower abacus, manual carries and session-only progress. JSON-LD features match visible home text. Privacy disclosures and their update date are unchanged.
+Maintain SEO titles and descriptions in all twelve content files. The four game names come from the App catalog. Help and privacy pages describe the counting rod board and the saved short practice. Arabic pages read right to left and render equations left to right. Each language has a local help and privacy URL plus a localized 404 page. JSON-LD features match the visible home text.
 
 content/store-metadata.json is a snapshot of local Fastlane copy, explicitly not proof of live App Store metadata. The parent-only check:app also detects metadata drift. Cloudflare builds use committed snapshots without the parent repo. No public price, rating, download link or released version is inferred from a source build. deployment.json identifies the actual website commit built by Cloudflare for production readback.
+
+The Arabic website uses `/ar/`, while the store metadata uses `ar-SA`. Hindi and Russian use `/hi/` and `/ru/` on the site and `hi` and `ru` in store metadata. Run `npm run sync:app` from this repo to refresh the manifests after changing translations in the parent repo.

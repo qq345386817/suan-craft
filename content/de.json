@@ -31,7 +31,7 @@
   "help.voiceTitle": "Die kurzen Merksätze anhören.",
   "help.voiceBody": "Aktiviere das Vorlesen in der Einführung oder im Ansichtsmenü. Gesprochen werden nur kurze Rechenmerksätze; Erklärungen bleiben im Text. Verfügbare Stimmen hängen vom Gerät ab. Auf dem iPhone kann aktiviertes Vorlesen auch im Stummmodus hörbar sein; Medienlautstärke und Audioausgabe prüfen. Kugelgeräusche haben einen eigenen Schalter.",
   "help.troubleTitle": "Gut zu wissen.",
-  "help.troubleBody": "Während der Vorführung sind manuelle Änderungen auch in der Pause gesperrt. Wähle die Übung oder verlasse das Spiel. Bei ungünstiger Ansicht kannst du sie zurücksetzen. Ohne passende Systemstimme bleiben die Texthinweise sichtbar. Kugelpositionen und Lernfortschritt gelten nur für die aktuelle Fenstersitzung; die Vorleseeinstellung wird lokal gespeichert.",
+  "help.troubleBody": "Während der Vorführung sind manuelle Änderungen auch in der Pause gesperrt. Wähle die Übung oder verlasse das Spiel. Bei ungünstiger Ansicht kannst du sie zurücksetzen. Ohne passende Systemstimme bleiben die Texthinweise sichtbar. Kugelpositionen und Fortschritt der Abakusspiele gelten nur für die aktuelle Fenstersitzung; die Vorleseeinstellung wird lokal gespeichert.",
   "help.contactTitle": "Kontakt aufnehmen.",
   "help.contactBody": "Nenne uns per E-Mail die App-Version, das Gerät, die Betriebssystemversion und die Schritte zum Nachstellen. Bitte keine sensiblen persönlichen Daten senden. Fehler können auch auf GitHub gemeldet werden; diese Meldungen sind öffentlich.",
   "help.compatibility": "Mindestversionen",
@@ -41,7 +41,7 @@
   "privacy.lead": "Was auf deinem Gerät bleibt und was beim Besuch der Website oder bei Kontakt passiert.",
   "privacy.updated": "Zuletzt aktualisiert",
   "privacy.appTitle": "Die App",
-  "privacy.appBody": "SuanCraft sendet keine Kugelpositionen und keinen Lernfortschritt an den Entwickler. Die App enthält keine Konten, Werbung oder Analyse-SDKs Dritter. Positionen und Fortschritt bleiben im Speicher der aktuellen Fenstersitzung. Die Vorleseeinstellung wird lokal auf deinem Gerät gespeichert.",
+  "privacy.appBody": "SuanCraft sendet keine Kugelpositionen und keinen Lernfortschritt an den Entwickler. Die App enthält keine Konten, Werbung oder Analyse-SDKs Dritter. Die Vorleseeinstellung wird lokal auf deinem Gerät gespeichert. Eine offene Kurzübung mit Rechenstäbchen lässt sich auf demselben Gerät speichern und fortsetzen.",
   "privacy.voiceTitle": "Systemstimmen",
   "privacy.voiceBody": "Das Vorlesen nutzt Apples systemeigene Sprachausgabe und installierte Stimmen. SuanCraft fordert keinen Mikrofonzugriff an und zeichnet deine Stimme nicht auf. Apple verwaltet Systemstimmen, Downloads und Plattformdienste nach eigenen Richtlinien. Auch TestFlight-Tests und Diagnosen werden von Apple verarbeitet.",
   "privacy.webTitle": "Diese Website",
@@ -71,7 +71,11 @@
   "faq.carry.question": "Erfolgen Überträge automatisch?",
   "faq.carry.answer": "Überträge und Entlehnungen führst du selbst aus. Der Gesamtwert ergibt sich aus den tatsächlichen Perlenstellungen und Stellenwerten.",
   "faq.progress.question": "Wird der Fortschritt gespeichert?",
-  "faq.progress.answer": "Perlenstellungen und Spielfortschritt gelten nur für die aktuelle Fenstersitzung. Die Einstellung für die Sprachausgabe wird lokal gespeichert.",
+  "faq.progress.answer": "Perlenstellungen und Spielfortschritt gelten nur für die aktuelle Fenstersitzung. Die Einstellung für die Sprachausgabe wird lokal gespeichert. Eine offene Kurzübung mit Rechenstäbchen lässt sich auf demselben Gerät speichern und fortsetzen.",
   "faq.voice.question": "Wie funktioniert die Sprachausgabe?",
-  "faq.voice.answer": "Die optionale Systemsprachausgabe liest kurze Rechenhinweise mit installierten Stimmen. Erklärungen bleiben auf dem Bildschirm."
+  "faq.voice.answer": "Die optionale Systemsprachausgabe liest kurze Rechenhinweise mit installierten Stimmen. Erklärungen bleiben auf dem Bildschirm.",
+  "home.rodsTitle": "Rechenstäbchen",
+  "home.rodsBody": "Ziehe Stäbchen auf ein Brett mit sechs Stellen. Lege 603, verschiebe es zu 6030 und übe den Übertrag von Hand.",
+  "help.rodsTitle": "Rechenstäbchen",
+  "help.rodsBody": "Wähle die Rechenstäbchen im Instrumentenmenü. Ziehe Stäbchen aus der Ablage in die Hauptreihe. Wechsle zwischen senkrechten und waagerechten Formen in benachbarten Stellen. Lass bei 603 die Zehnerstelle leer. In den Übungen bereiten Hilfsgruppen einen Tausch vor. Führe den Tausch über die Befehle zum Zusammenfassen oder Übertragen beziehungsweise zum Entleihen aus."
 }

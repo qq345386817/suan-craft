@@ -31,7 +31,7 @@
   "help.voiceTitle": "Escucha las fórmulas clave.",
   "help.voiceBody": "Activa la narración en la introducción o el menú de vista. Solo se leen las fórmulas aritméticas clave; las explicaciones quedan en pantalla. Las voces dependen de las instaladas en el dispositivo. En iPhone, la narración activada puede sonar en modo Silencio; comprueba el volumen multimedia y la salida de audio. Los sonidos de las cuentas tienen un interruptor independiente.",
   "help.troubleTitle": "Algunas cosas que conviene saber.",
-  "help.troubleBody": "La edición manual está bloqueada durante la demostración, incluso en pausa. Elige práctica o sal del juego para mover las cuentas. Restablece la vista si cuesta ver el modelo. Si no hay una voz compatible, los subtítulos siguen visibles. Las posiciones y el progreso duran solo durante la sesión de ventana actual; la preferencia de narración se guarda localmente.",
+  "help.troubleBody": "La edición manual está bloqueada durante la demostración, incluso en pausa. Elige práctica o sal del juego para mover las cuentas. Restablece la vista si cuesta ver el modelo. Si no hay una voz compatible, los subtítulos siguen visibles. Las posiciones de las cuentas y el progreso de los juegos de ábaco se conservan durante la sesión de ventana actual. La preferencia de narración se guarda en el dispositivo.",
   "help.contactTitle": "Ponte en contacto.",
   "help.contactBody": "Escríbenos con la versión de la app, el dispositivo, el sistema operativo y los pasos para reproducir el problema. Evita enviar información personal sensible. También puedes informar de errores en GitHub; esos informes son públicos.",
   "help.compatibility": "Versiones mínimas del sistema",
@@ -41,7 +41,7 @@
   "privacy.lead": "Qué permanece en tu dispositivo y qué ocurre al visitar el sitio o contactarnos.",
   "privacy.updated": "Última actualización",
   "privacy.appTitle": "La aplicación",
-  "privacy.appBody": "SuanCraft no envía al desarrollador las posiciones de tus cuentas ni el progreso de las lecciones. La app no tiene cuentas, publicidad ni SDK de análisis de terceros. Las posiciones y el progreso permanecen en memoria durante la sesión de ventana actual. La preferencia de narración se guarda en tu dispositivo.",
+  "privacy.appBody": "SuanCraft no envía al desarrollador las posiciones de tus cuentas ni el progreso de las lecciones. La app no tiene cuentas, publicidad ni SDK de análisis de terceros. La preferencia de narración se guarda en tu dispositivo. Puedes guardar una práctica breve de varillas sin terminar y retomarla en el mismo dispositivo.",
   "privacy.voiceTitle": "Voz del sistema",
   "privacy.voiceBody": "La narración utiliza la conversión de texto a voz de Apple y las voces instaladas disponibles. SuanCraft no solicita acceso al micrófono ni graba tu voz. Apple gestiona las voces, las descargas y los servicios de plataforma según sus propias políticas, incluidas las pruebas y los diagnósticos de TestFlight.",
   "privacy.webTitle": "Este sitio web",
@@ -71,7 +71,11 @@
   "faq.carry.question": "¿Las llevadas son automáticas?",
   "faq.carry.answer": "Las llevadas y los préstamos se hacen manualmente. El total refleja las posiciones reales de las cuentas y su valor posicional.",
   "faq.progress.question": "¿Se guarda el progreso?",
-  "faq.progress.answer": "Las cuentas y el progreso duran durante la sesión de la ventana. La preferencia de narración se guarda en el dispositivo.",
+  "faq.progress.answer": "Las cuentas y el progreso duran durante la sesión de la ventana. La preferencia de narración se guarda en el dispositivo. Puedes guardar una práctica breve de varillas sin terminar y retomarla en el mismo dispositivo.",
   "faq.voice.question": "¿Cómo funciona la narración?",
-  "faq.voice.answer": "La síntesis de voz opcional lee indicaciones aritméticas clave con voces instaladas. Las explicaciones permanecen en pantalla."
+  "faq.voice.answer": "La síntesis de voz opcional lee indicaciones aritméticas clave con voces instaladas. Las explicaciones permanecen en pantalla.",
+  "home.rodsTitle": "Varillas de cálculo",
+  "home.rodsBody": "Arrastra las varillas a un tablero de seis posiciones. Forma 603, desplázalo hasta 6030 y practica la llevada manual.",
+  "help.rodsTitle": "Varillas de cálculo",
+  "help.rodsBody": "Elige Varillas de cálculo en el menú de instrumentos. Arrástralas desde la bandeja a la fila principal. Alterna las formas verticales y horizontales entre posiciones contiguas y deja las decenas vacías en 603. Los grupos auxiliares sirven para preparar el canje. Complétalo con la acción de combinar o llevar, o toma prestada una unidad de la posición siguiente."
 }
