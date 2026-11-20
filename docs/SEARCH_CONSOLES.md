@@ -1,5 +1,13 @@
 # Search console submission
 
+## Bing sitemap recovery on 2026-11-20
+
+The sitemap row showed `Error` after the November 9 crawl. The live sitemap returned HTTP 200 with valid XML and 27 canonical URLs. The live robots.txt permitted crawling and referenced the same sitemap URL.
+
+Re-submitted the existing sitemap in Bing Webmaster Tools. The row moved from `Processing` to `Success` on November 20 and reported 27 discovered URLs. Bing's own Live URL test returned HTTP 200 with `Content-Type: application/xml`. The original crawl failure did not expose a cause in the report. The 27 URLs are from the current production sitemap. Bing's discovery count does not establish indexing.
+
+## Initial submission on 2026-11-09
+
 Observed on 2026-11-09 for `https://suan-craft.luopeike.com/`, using the existing signed-in Google and Bing accounts.
 
 | Service | Ownership | Sitemap result |
